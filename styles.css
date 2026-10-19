@@ -148,6 +148,12 @@ a:focus-visible {
   font-weight: 700;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 28px;
+}
+
 .text-link span {
   color: #728f30;
   font-size: 1rem;
