@@ -375,6 +375,83 @@ a:focus-visible {
   font-size: 1.1rem;
 }
 
+.portfolio-projects {
+  padding-top: 92px;
+  padding-bottom: 100px;
+  border-top: 1px solid var(--line);
+}
+
+.projects-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.projects-heading .eyebrow {
+  margin-bottom: 16px;
+}
+
+.projects-heading h2 {
+  margin: 0;
+  font-size: clamp(2.4rem, 5vw, 3.7rem);
+  font-weight: 600;
+  letter-spacing: -0.075em;
+  line-height: 1.06;
+}
+
+.portfolio-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.portfolio-project {
+  position: relative;
+  display: flex;
+  min-height: 196px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 21px;
+  border: 1px solid var(--line);
+  background: #eeede6;
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.portfolio-project:hover {
+  transform: translateY(-4px);
+  border-color: #9ba18e;
+}
+
+.portfolio-project-number {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.57rem;
+  letter-spacing: 0.04em;
+}
+
+.portfolio-project h3 {
+  margin: 25px 0 0;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.portfolio-project p {
+  max-width: 230px;
+  margin: 8px 0 22px;
+  color: #6d7068;
+  font-size: 0.72rem;
+  line-height: 1.7;
+}
+
+.portfolio-project-arrow {
+  position: absolute;
+  top: 18px;
+  right: 19px;
+  color: #728f30;
+}
+
 .contact {
   padding-top: 112px;
   padding-bottom: 118px;
@@ -555,6 +632,15 @@ a:focus-visible {
     padding-bottom: 82px;
   }
 
+  .portfolio-projects {
+    padding-top: 76px;
+    padding-bottom: 82px;
+  }
+
+  .portfolio-project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .contact {
     padding-top: 82px;
     padding-bottom: 86px;
@@ -590,6 +676,14 @@ a:focus-visible {
 
   .interests-heading {
     display: block;
+  }
+
+  .projects-heading {
+    display: block;
+  }
+
+  .portfolio-project-grid {
+    grid-template-columns: 1fr;
   }
 
   .section-aside {

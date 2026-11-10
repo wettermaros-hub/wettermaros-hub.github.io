@@ -103,6 +103,12 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
 .validator-links a:hover { color: var(--green); }
 .validator-links a span { margin-left: 5px; color: var(--green); font-size: .61rem; }
 .validator-box > small { display: block; margin-top: 9px; color: #777a70; font-size: .6rem; }
+.related-sites { padding-top: 23px; padding-bottom: 24px; border-top: 1px solid var(--line); }
+.related-sites .eyebrow { margin-bottom: 11px; font-size: .52rem; }
+.related-links { display: flex; flex-wrap: wrap; gap: 9px 22px; }
+.related-links a { color: #62675f; font-size: .65rem; font-weight: 600; }
+.related-links a:hover, .related-links a[aria-current="page"] { color: var(--green); }
+.related-links a span { margin-left: 4px; color: var(--green); }
 .site-footer { min-height: 78px; border-top: 1px solid var(--line); }
 .site-footer > p, .footer-note { color: var(--muted); font-size: .6rem; }
 .footer-note { font-family: var(--mono); letter-spacing: .04em; }
